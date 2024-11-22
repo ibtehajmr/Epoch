@@ -654,6 +654,15 @@
     padding-left: calc(1.5rem * 0.5);
     padding-right: calc(1.5rem * 0.5);
   }
+  .navbar .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar .navbar-nav .nav-item {
+    width: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 /* Min width 1750px */
 @media only screen and (min-width: 1750px) {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import LOGO from '../assets/img/logoIcon.png';
 
 const menuList = [
@@ -52,7 +52,6 @@ const menuList = [
 ];
 
 const Header = () => {
-  const location = useLocation();
   const [dropdownOpen, setDropdownOpen] = useState('');
   const [mobileNavActive, setMobileNavActive] = useState(false);
 
@@ -83,7 +82,7 @@ const Header = () => {
   // -------- dropdown show and hidden
   const handleDropdown = (dropDownList, id) => {
     if (dropDownList) {
-      setDropdownOpen(id);
+      setDropdownOpen((prevId) => (prevId === id ? '' : id));
     } else {
       setDropdownOpen('');
       setMobileNavActive(false);
@@ -95,7 +94,7 @@ const Header = () => {
       <nav className='navbar navbar-expand-lg mb-nav' id='navbar'>
         <div className='container-fluid'>
           <div
-            onClick={() => setMobileNavActive(true)}
+            onClick={() => setMobileNavActive((prev) => !prev)}
             className='navbar-toggler text-decoration-none'
           >
             <span className='burger-menu'>
@@ -105,33 +104,29 @@ const Header = () => {
             </span>
           </div>
           <div className='collapse navbar-collapse navbar-container'>
-            <img src={LOGO} alt='image' />
+            <img src={LOGO} alt='Logo' />
             <ul className='navbar-nav'>
-              {menuList.map(({ id, dropDownList, name, path }) => {
-                return (
-                  <li key={id} className='nav-item'>
-                    <Link
-                      to={path}
-                      className={`${dropDownList ? 'dropdown-toggle' : ''} nav-link`}
-                    >
-                      {name}
-                    </Link>
-                    {dropDownList && (
-                      <ul className='dropdown-menu'>
-                        {dropDownList.map(({ id, path, name }) => {
-                          return (
-                            <li key={id} className='nav-item'>
-                              <Link to={path} className='nav-link'>
-                                {name}
-                              </Link>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    )}
-                  </li>
-                );
-              })}
+              {menuList.map(({ id, dropDownList, name, path }) => (
+                <li key={id} className='nav-item'>
+                  <Link
+                    to={path}
+                    className={`d-flex align-items-center justify-content-center ${dropDownList ? 'gap-2 dropdown-toggle' : ''} nav-link`}
+                  >
+                    {name}
+                  </Link>
+                  {dropDownList && (
+                    <ul className='dropdown-menu'>
+                      {dropDownList.map(({ id, path, name }) => (
+                        <li key={id} className='nav-item'>
+                          <Link to={path} className='nav-link'>
+                            {name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -157,14 +152,10 @@ const Header = () => {
               return (
                 <li
                   key={id}
+                  onClick={(e) => handleDropdown(dropDownList, id)}
                   className={`responsive-menu-list ${dropdownOpen === id ? 'activeDropdown' : ''} ${dropDownList ? '' : 'without-icon'}`}
                 >
-                  <NavLink
-                    onClick={(e) => handleDropdown(dropDownList, id)}
-                    to={path}
-                  >
-                    {name}
-                  </NavLink>
+                  <NavLink to={path}>{name}</NavLink>
                   {dropDownList && (
                     <ul className='responsive-menu-items'>
                       {dropDownList.map(({ id, name, path }) => (
@@ -180,7 +171,11 @@ const Header = () => {
           </ul>
           <div className='others-option d-md-flex align-items-center'>
             <div className='option-item'>
-              <Link to='/contact' className='default-btn'>
+              <Link
+                to='/contact'
+                className='default-btn'
+                onClick={() => setMobileNavActive(false)}
+              >
                 <i className='ri-arrow-right-line'></i>
                 <span>Get Started</span>
               </Link>

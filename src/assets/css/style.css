@@ -243,7 +243,10 @@ Navbar Area Style
 .navbar .navbar-nav {
   margin-left: auto;
 }
-
+.navbar img {
+  width: 80px;
+  height: auto;
+}
 .navbar .navbar-nav .nav-item {
   width: 160px;
   position: relative;
@@ -737,6 +740,9 @@ Responsive Navbar CSS
 .responsive-navbar .offcanvas-header {
   padding: 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .responsive-navbar .offcanvas-header .close-btn {
@@ -3278,9 +3284,12 @@ Contact Section CSS
 }
 
 .navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 100px;
-  border: 1px solid #fff;
-  padding: 10px;
-  padding-left: 50px;
-  background-color: #00000028;
+  border: 1px solid rgba(255, 255, 255, 0.51);
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
