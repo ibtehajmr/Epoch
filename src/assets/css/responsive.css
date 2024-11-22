@@ -229,6 +229,13 @@
   .brands-area .row {
     justify-content: center !important;
   }
+  /* contact area */
+  .contact-form {
+    padding-right: 0px;
+  }
+  .contact-area .container {
+    flex-direction: column;
+  }
   /* query area */
   .query-section-title {
     font-size: 28px;
@@ -674,6 +681,13 @@
   }
   #progress-value {
     font-size: 25px;
+  }
+  /* contact area */
+  .contact-form {
+    padding-right: 0px;
+  }
+  .contact-area .container {
+    flex-direction: column;
   }
 }
 /* Min width 992px to Max width 1199px */

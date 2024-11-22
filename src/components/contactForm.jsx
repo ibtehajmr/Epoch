@@ -3,120 +3,114 @@ import contact_img from '../assets/img/contact.png';
 const ContactForm = () => {
   return (
     <div className='contact-area ptb-10'>
-      <div className='container'>
-        <div className='row justify-content-center align-items-center'>
-          <div className='col-lg-6'>
-            <div className='section-title'>
-              <div className='width'>
-                <div class='banner-area' style={{ backgroundImage: 'none' }}>
-                  <span class='banner-top-title'>Contact</span>
-                </div>
-                <h2>Join Our Network</h2>
-                <p>
-                  We’d love to have you! Join our 100% remote network of creator
-                  & freelancers.
-                </p>
+      <div className='container d-flex'>
+        <div className='col-lg-6'>
+          <div className='section-title'>
+            <div className='width'>
+              <div
+                class='banner-area'
+                style={{ backgroundImage: 'none', paddingTop: '0px' }}
+              >
+                <span class='banner-top-title'>Contact</span>
               </div>
-            </div>
-            <div className='contact-form'>
-              <form id='contactForm'>
-                <div className='row'>
-                  <div className='col-lg-12 col-md-12'>
-                    <div className='form-group'>
-                      <input
-                        type='text'
-                        name='name'
-                        className='form-control'
-                        id='name'
-                        required
-                        data-error='Please enter your name'
-                        placeholder='Your Name'
-                      />
-                      <div className='help-block with-errors'></div>
-                    </div>
-                  </div>
-
-                  <div className='col-lg-12 col-md-12'>
-                    <div className='form-group'>
-                      <input
-                        type='text'
-                        name='email'
-                        className='form-control'
-                        id='email'
-                        required
-                        data-error='Please enter your Email Address'
-                        placeholder='Email Address'
-                      />
-                      <div className='help-block with-errors'></div>
-                    </div>
-                  </div>
-
-                  <div className='col-lg-12 col-md-12'>
-                    <div className='form-group'>
-                      <input
-                        type='text'
-                        name='subject'
-                        className='form-control'
-                        id='subject'
-                        required
-                        data-error='Please enter your subject'
-                        placeholder='Subject'
-                      />
-                      <div className='help-block with-errors'></div>
-                    </div>
-                  </div>
-
-                  <div className='col-lg-12 col-md-12'>
-                    <div className='form-group'>
-                      <input
-                        type='text'
-                        name='phone_number'
-                        className='form-control'
-                        id='phone_number'
-                        required
-                        data-error='Please enter your phone number'
-                        placeholder='Phone Number'
-                      />
-                      <div className='help-block with-errors'></div>
-                    </div>
-                  </div>
-
-                  <div className='col-lg-12 col-md-12 mb-5'>
-                    <div className='form-group'>
-                      <textarea
-                        name='message'
-                        id='message'
-                        className='form-control no-resize'
-                        cols='30'
-                        rows='6'
-                        required
-                        data-error='Please enter your message'
-                        placeholder='Write Your Message'
-                      />
-                      <div className='help-block with-errors'></div>
-                    </div>
-                  </div>
-
-                  <div className='col-lg-12 col-md-12'>
-                    <button type='submit' className='btn btn-primary pt-3 pb-3'>
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
+              <h2>Join Our Network</h2>
+              <p>
+                We’d love to have you! Join our 100% remote network of creator &
+                freelancers.
+              </p>
             </div>
           </div>
-          <div
-            className='col-lg-6'
-            style={{
-              height: '100%',
-              borderRadius: '22px',
-              overflow: 'hidden',
-            }}
-          >
-            <div className='image'>
-              <img src={contact_img} alt='image' />
-            </div>
+          <div className='contact-form'>
+            <form id='contactForm'>
+              <div className='row mb-4'>
+                <div className='col-lg-12 col-md-12'>
+                  <div className='form-group'>
+                    <input
+                      type='text'
+                      name='name'
+                      className='form-control'
+                      id='name'
+                      required
+                      data-error='Please enter your name'
+                      placeholder='Your Name'
+                    />
+                    <div className='help-block with-errors'></div>
+                  </div>
+                </div>
+
+                <div className='col-lg-12 col-md-12'>
+                  <div className='form-group'>
+                    <input
+                      type='text'
+                      name='email'
+                      className='form-control'
+                      id='email'
+                      required
+                      data-error='Please enter your Email Address'
+                      placeholder='Email Address'
+                    />
+                    <div className='help-block with-errors'></div>
+                  </div>
+                </div>
+
+                <div className='col-lg-12 col-md-12'>
+                  <div className='form-group'>
+                    <input
+                      type='text'
+                      name='subject'
+                      className='form-control'
+                      id='subject'
+                      required
+                      data-error='Please enter your subject'
+                      placeholder='Subject'
+                    />
+                    <div className='help-block with-errors'></div>
+                  </div>
+                </div>
+
+                <div className='col-lg-12 col-md-12'>
+                  <div className='form-group'>
+                    <input
+                      type='text'
+                      name='phone_number'
+                      className='form-control'
+                      id='phone_number'
+                      required
+                      data-error='Please enter your phone number'
+                      placeholder='Phone Number'
+                    />
+                    <div className='help-block with-errors'></div>
+                  </div>
+                </div>
+
+                <div className='col-lg-12 col-md-12 mb-5'>
+                  <div className='form-group'>
+                    <textarea
+                      name='message'
+                      id='message'
+                      className='form-control no-resize'
+                      cols='30'
+                      rows='6'
+                      required
+                      data-error='Please enter your message'
+                      placeholder='Write Your Message'
+                    />
+                    <div className='help-block with-errors'></div>
+                  </div>
+                </div>
+
+                <div className='col-lg-12 col-md-12'>
+                  <button type='submit' className='btn btn-primary pt-3 pb-3'>
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div className='col-lg-6 image-container'>
+          <div className='image'>
+            <img src={contact_img} alt='image' />
           </div>
         </div>
       </div>
