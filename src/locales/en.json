@@ -1,0 +1,14 @@
+{
+    "appName": "Epoch AI",
+    "getStarted": "Get Started",
+    "contactUs": {
+        "title": "Contact Us",
+        "desc": "Explore the various interesting content that we present"
+    },
+    "footer": {
+        "querySection": {
+            "title": "Do you have any questions?",
+            "desc": "Feel free to send us your questions or request a free consultation."
+        }
+    }
+}
