@@ -219,11 +219,12 @@
     left: 9%;
   }
   /* brands area */
+  .brands-area p {
+    font-size: 28px;
+    padding-bottom: 3rem;
+  }
   .brands-area img {
     margin-bottom: 25px;
-  }
-  .brands-area .row .col-lg-2:last-child .image img {
-    margin-bottom: 0;
   }
   .brands-area .row {
     justify-content: center !important;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import brand_1 from '../assets/img/brand1.png';
 import brand_2 from '../assets/img/brand2.png';
 import brand_3 from '../assets/img/brand3.png';
@@ -19,34 +19,42 @@ const brandsData = [
 ];
 
 const Brands = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className='brands-area ptb-100'>
       <div className='container'>
         <p>Our Partner By Logo</p>
-        <div className='marquee-wrapper'>
-          <Marquee
-            autoFill
-            pauseOnHover
-            speed={40}
-            gradient
-            gradientColor='rgba(0, 6, 16, 1)'
-          >
-            <div className='row justify-content-between align-items-center'>
-              {brandsData.map(({ id, brand_logo }) => {
-                return (
-                  <div key={id} className='col-lg-2 col-md-2 col-6'>
-                    <div className='image'>
-                      <img src={brand_logo} alt='image' />
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </Marquee>
-        </div>
+        <Marquee
+          autoFill
+          pauseOnHover
+          speed={40}
+          gradient={!isSmallScreen}
+          gradientColor='rgba(0, 6, 16, 1)'
+        >
+          {brandsData.map(({ id, brand_logo }) => {
+            return (
+              <div key={id} className='me-5'>
+                <img src={brand_logo} alt='image' />
+              </div>
+            );
+          })}
+        </Marquee>
       </div>
     </div>
   );
 };
 
-export default Brands
+export default Brands;
