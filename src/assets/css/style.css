@@ -253,7 +253,7 @@ Navbar Area Style
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 100px;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.51);
   text-align: center;
 }
 
@@ -304,7 +304,7 @@ Navbar Area Style
   width: 270px;
   margin-top: 0;
   display: block;
-  padding: 12px 0;
+  padding: 12px;
   border-radius: 4px;
   position: absolute;
   visibility: hidden;

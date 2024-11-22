@@ -117,7 +117,7 @@ const Header = () => {
                   {dropDownList && (
                     <ul className='dropdown-menu'>
                       {dropDownList.map(({ id, path, name }) => (
-                        <li key={id} className='nav-item'>
+                        <li key={id}>
                           <Link to={path} className='nav-link'>
                             {name}
                           </Link>
