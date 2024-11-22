@@ -1,6 +1,10 @@
 {
     "appName": "Epoch AI",
     "getStarted": "Get Started",
+    "aboutUs": {
+        "title": "About Us",
+        "desc": "Our primary objective consistently revolves around identifying and collaborating with the most exceptional individuals. Our standards are set remarkably high, and it's evident that you're poised and prepared to embrace this formidable opportunity and rise to the challenge."
+    },
     "contactUs": {
         "title": "Contact Us",
         "desc": "Explore the various interesting content that we present"

@@ -12,7 +12,7 @@ const PageHeader = ({ title, desc, subRoute = '' }) => {
         </div>
       ) : null}
       <h1 className='grd-color-1'>{title}</h1>
-      <p>{desc}</p>
+      <p className='w-75'>{desc}</p>
 
       {pathname !== '/contact' ? (
         <div className='cta'>

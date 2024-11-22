@@ -5,18 +5,20 @@ import Testimonial from '../components/testimonial'
 import Brands from '../components/brands'
 import InstagramGallery from '../components/instagramGallery'
 import { ScrollRestoration } from 'react-router-dom'
+import { strings } from '../locales';
 
 const AboutUs = () => {
+  const { title, desc } = strings.aboutUs;
   return (
     <>
-      <PageHeader pageName ="About Us" />
+      <PageHeader title={title} desc={desc} />
       <About />
       <Testimonial />
       <Brands />
       <InstagramGallery />
-      <ScrollRestoration/>
+      <ScrollRestoration />
     </>
-  )
-}
+  );
+};
 
 export default AboutUs
