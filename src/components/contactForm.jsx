@@ -2,7 +2,7 @@ import React from 'react'
 import contact_img from '../assets/img/contact.png';
 const ContactForm = () => {
   return (
-    <div className='contact-area ptb-10'>
+    <div className='contact-area ptb-100'>
       <div className='container d-flex'>
         <div className='col-lg-6'>
           <div className='section-title'>

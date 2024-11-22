@@ -9,7 +9,7 @@ const QuerySection = () => {
   } = strings;
 
   return (
-    <div className='pb-100'>
+    <div className='ptb-100'>
       <div className='container d-flex'>
         <div className='query-section-content'>
           <h6 className='query-section-title'>{querySection.title}</h6>
