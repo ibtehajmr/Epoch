@@ -258,7 +258,7 @@ Navbar Area Style
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #fff;
+  color: var(--white_color);
   position: relative;
   transition: var(--transition);
   font-weight: 500;
@@ -274,7 +274,7 @@ Navbar Area Style
 
 .navbar .navbar-nav .nav-item:last-child {
   margin-right: 0;
-  background-color: #7f00ff;
+  background-color: var(--main_color);
   border: none;
 }
 
@@ -1388,7 +1388,7 @@ Banner Area CSS
   padding: 5px 20px;
   border-radius: 5px;
   font-size: 18px;
-  color: #fff;
+  color: var(--white_color);
   display: inline-block;
   position: relative;
 }
@@ -1401,7 +1401,7 @@ Banner Area CSS
   transform: translateY(-50%) rotate(45deg);
   width: 8px;
   height: 8px;
-  background-color: #fff;
+  background-color: var(--white_color);
 }
 
 .banner-area .content h1 {
@@ -1800,7 +1800,7 @@ Brands Area CSS
   font-weight: 700;
   line-height: 25.5px;
   text-align: center;
-  color: #fff;
+  color: var(--white_color);
   padding-top: 2rem;
   padding-bottom: 5rem;
 }
@@ -3243,13 +3243,18 @@ Contact Section CSS
 =================================================*/
 
 .btn {
+  font-weight: 500;
   border-radius: 100px;
   width: 160px;
   border: none;
 }
 
 .btn-primary {
-  background-color: #7f00ff;
+  background-color: var(--main_color);
+}
+.btn-primary:hover {
+  background-color: var(--main_color);
+  color: var(--white_color);
 }
 
 .btn-secondary {
@@ -3292,4 +3297,33 @@ Contact Section CSS
   padding: 10px 30px;
   background-color: rgba(0, 0, 0, 0.28);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.query-section-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.query-section-title {
+  font-size: 52px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.query-section-desc {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.query-section-input {
+  border-radius: 57px;
+  border: 1px solid #fff;
+  color: var(--white_color);
+  width: 60%;
+}
+
+.query-section-logo {
+  font-size: 96px;
+  font-weight: 700;
 }

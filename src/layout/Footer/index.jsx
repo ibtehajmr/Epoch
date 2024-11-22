@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       {/* <NewsSection /> */}
-      {/* <QuerySection /> */}
+      <QuerySection />
       <LegalAndLinks />
     </div>
   );

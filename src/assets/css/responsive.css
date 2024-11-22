@@ -229,6 +229,27 @@
   .brands-area .row {
     justify-content: center !important;
   }
+  /* query area */
+  .query-section-title {
+    font-size: 28px;
+  }
+
+  .query-section-desc {
+    font-size: 17px;
+  }
+
+  .query-section-content div {
+    display: flex;
+    flex-direction: column;
+  }
+  .query-section-content,
+  .query-section-input,
+  .query-section-content div button {
+    width: 100%;
+  }
+  .query-section-logo {
+    display: none;
+  }
   /* pricing area */
   .pricing-area {
     background-image: none;
@@ -636,6 +657,13 @@
   }
   .footer-area .single-footer-widget .links-list li a {
     font-size: 16px;
+  }
+  /* query area */
+  .query-section-content {
+    width: 100%;
+  }
+  .query-section-logo {
+    display: none;
   }
   /* Top to Bottom Button css */
   #progress {
