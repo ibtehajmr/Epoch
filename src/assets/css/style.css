@@ -3342,3 +3342,15 @@ Contact Section CSS
 .no-background {
   background-image: none 
 }
+
+/* Stats area */
+.stat-value {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.stat-description {
+  font-size: 20px;
+  color: #656C7B; 
+}

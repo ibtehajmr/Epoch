@@ -7,6 +7,7 @@ import InstagramGallery from '../components/instagramGallery'
 import { ScrollRestoration } from 'react-router-dom'
 import { strings } from '../locales';
 import AboutCard from '../assets/img/aboutCard.png';
+import StatsSection from '../components/common/statsSection';
 
 const AboutUs = () => {
   const {
@@ -17,6 +18,7 @@ const AboutUs = () => {
   return (
     <>
       <PageHeader title={title} desc={desc} />
+      <StatsSection />
       <About
         heading={heading}
         subHeading={subHeading}
