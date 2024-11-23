@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutUs from '../../assets/img/about-us.png';
 
 const StatsSection = () => {
   const stats = [
@@ -10,8 +11,13 @@ const StatsSection = () => {
 
   return (
     <div className='stats-area ptb-100'>
-      <div className='container py-5'>
-        <div className='row text-center'>
+      <div className='container'>
+        <div className='image-container'>
+          <div className='image'>
+            <img src={AboutUs} alt='image' />
+          </div>
+        </div>
+        <div className='row text-center pt-5'>
           {stats.map((stat, index) => (
             <div key={index} className='col-lg-3 col-md-6 mb-4'>
               <h6 className='grd-color-1 stat-value'>{stat.value}</h6>

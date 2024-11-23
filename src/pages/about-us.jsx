@@ -6,7 +6,7 @@ import Brands from '../components/brands'
 import InstagramGallery from '../components/instagramGallery'
 import { ScrollRestoration } from 'react-router-dom'
 import { strings } from '../locales';
-import AboutCard from '../assets/img/aboutCard.png';
+import AboutCard from '../assets/img/about-card.png';
 import StatsSection from '../components/common/statsSection';
 
 const AboutUs = () => {
@@ -27,9 +27,9 @@ const AboutUs = () => {
         direction='ltr'
         showButton
       />
-      <Testimonial />
       <Brands />
       <InstagramGallery />
+      <Testimonial />
       <ScrollRestoration />
     </>
   );
