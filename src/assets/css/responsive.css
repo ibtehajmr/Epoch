@@ -162,6 +162,7 @@
   }
   .about-area .content {
     padding-left: 0px;
+    height: auto !important
   }
   .about-area .content h2 {
     font-size: 28px;
@@ -588,6 +589,7 @@
   }
   .about-area .content {
     padding-left: 0px;
+     height: auto !important
   }
   .about-area .sub-counter h3 {
     font-size: 36px;

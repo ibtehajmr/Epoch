@@ -3,7 +3,12 @@
     "getStarted": "Get Started",
     "aboutUs": {
         "title": "About Us",
-        "desc": "Our primary objective consistently revolves around identifying and collaborating with the most exceptional individuals. Our standards are set remarkably high, and it's evident that you're poised and prepared to embrace this formidable opportunity and rise to the challenge."
+        "desc": "Our primary objective consistently revolves around identifying and collaborating with the most exceptional individuals. Our standards are set remarkably high, and it's evident that you're poised and prepared to embrace this formidable opportunity and rise to the challenge.",
+        "imageCard": {
+            "subHeading": "About Us",
+            "heading": "Leading the Future with AI-Powered Solutions",
+            "desc": "At Epoch, we specialize in creating innovative software solutions powered by artificial intelligence. Our mission is to empower businesses by leveraging AI to drive efficiency, foster innovation, and provide a competitive edge in the market. From AI-driven analytics to automated workflows, our solutions are designed to meet the unique needs of each client."
+        }
     },
     "contactUs": {
         "title": "Contact Us",
