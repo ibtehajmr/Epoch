@@ -6,27 +6,15 @@ import Brands from '../components/brands'
 import InstagramGallery from '../components/instagramGallery'
 import { ScrollRestoration } from 'react-router-dom'
 import { strings } from '../locales';
-import AboutCard from '../assets/img/about-card.png';
 import StatsSection from '../components/common/statsSection';
 
 const AboutUs = () => {
-  const {
-    title,
-    desc,
-    imageCard: { heading, desc: cardDesc, subHeading },
-  } = strings.aboutUs;
+  const { title, desc } = strings.aboutUs;
   return (
     <>
       <PageHeader title={title} desc={desc} />
       <StatsSection />
-      <About
-        heading={heading}
-        subHeading={subHeading}
-        description={cardDesc}
-        image={AboutCard}
-        direction='ltr'
-        showButton
-      />
+      <About direction='ltr' showButton />
       <Brands />
       <InstagramGallery />
       <Testimonial />

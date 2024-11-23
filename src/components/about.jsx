@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { strings } from '../locales';
+import AboutCard from '../assets/img/about-card.png';
 
 const About = ({
   heading,
@@ -10,6 +12,8 @@ const About = ({
   direction = 'rtl',
   showButton = false,
 }) => {
+  const staticText = strings.aboutUs.imageCard;
+
   const contentStyle = {
     textAlign: direction === 'rtl' ? 'right' : 'left',
   };
@@ -19,7 +23,7 @@ const About = ({
   };
 
   return (
-    <div className='about-area ptb-100 section-bg'>
+    <div className='about-area ptb-100'>
       <div className='container'>
         <motion.div
           className='row align-items-center'
@@ -39,7 +43,7 @@ const About = ({
         >
           <div className='col-lg-6'>
             <div className='image'>
-              <img src={image} alt='Page Heading' />
+              <img src={image || AboutCard} alt='Page Heading' />
             </div>
           </div>
           <div className='col-lg-6'>
@@ -48,12 +52,14 @@ const About = ({
             >
               <div>
                 <div className='banner-area no-background'>
-                  <span className='banner-top-title'>{subHeading}</span>
+                  <span className='banner-top-title'>
+                    {subHeading || staticText.subHeading}
+                  </span>
                 </div>
 
-                <h2 style={contentStyle}>{heading}</h2>
+                <h2 style={contentStyle}>{heading || staticText.heading}</h2>
               </div>
-              <p style={contentStyle}>{description}</p>
+              <p style={contentStyle}>{description || staticText.desc}</p>
               {showButton ? (
                 <Link className='btn btn-primary pt-3 pb-3' to='/about'>
                   Learn More
