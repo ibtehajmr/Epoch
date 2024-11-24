@@ -15,53 +15,64 @@ const BlogsComponent = () => {
     clickable: true,
   }
   return (
-    <div className="article-area ptb-100">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-4">
-            <div className="section-title">
-              <div className="width">
-                <div className="sub-t">Our Latest News</div>
+    <div className='article-area ptb-100'>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-lg-4'>
+            <div className='section-title'>
+              <div className='width'>
+                <div className='banner-area no-background pt-0'>
+                  <span className='banner-top-title'>Our Latest News</span>
+                </div>
                 <h2>Latest News & Articles</h2>
-                <Link className="main-btn" to="/blog"><span></span><i className="ri-pencil-line"></i> See More</Link>
+                <button className='btn btn-primary' to='/blog'>
+                  See More
+                </button>
               </div>
             </div>
           </div>
-          <div className="col-lg-8">
-            <div className="article-content">
+          <div className='col-lg-8'>
+            <div className='article-content'>
               <Swiper
                 spaceBetween={30}
                 // slidesPerView={2}
                 breakpoints={{
                   0: {
-                    slidesPerView: 1
+                    slidesPerView: 1,
                   },
                   576: {
-                    slidesPerView: 1
+                    slidesPerView: 1,
                   },
                   768: {
-                    slidesPerView: 2
+                    slidesPerView: 2,
                   },
                   992: {
-                    slidesPerView: 1
+                    slidesPerView: 1,
                   },
                   1200: {
-                    slidesPerView: 2
-                  }
+                    slidesPerView: 2,
+                  },
                 }}
                 pagination={pagination}
                 loop
                 className=''
                 modules={[Pagination]}
               >
-                {
-                  blogData.slice(0, 4).map(({ id, date, link, title, thumb }) => {
+                {blogData
+                  .slice(0, 4)
+                  .map(({ id, date, link, title, thumb, commentCount }) => {
                     return (
-                      <SwiperSlide key={id}> <BlogCard date={date} link={link} title={title} thumb={thumb} /> </SwiperSlide>
-                    )
-                  })
-                }
-
+                      <SwiperSlide key={id}>
+                        <BlogCard
+                          date={date}
+                          link={link}
+                          title={title}
+                          thumb={thumb}
+                          commentCount={commentCount}
+                        />
+                      </SwiperSlide>
+                    );
+                  })}
               </Swiper>
               <div className='containerForBullets'></div>
             </div>
@@ -69,7 +80,7 @@ const BlogsComponent = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default BlogsComponent
