@@ -117,7 +117,20 @@ const testimonialData = [
 ];
 
 const Testimonial = () => {
-  const swiperRef = useRef();
+  const swiperRefs = {
+    testimonial: useRef(),
+    team: useRef(),
+  };
+
+  const handleSlidePrev = () => {
+    swiperRefs.testimonial.current?.slidePrev();
+    swiperRefs.team.current?.slidePrev();
+  };
+
+  const handleSlideNext = () => {
+    swiperRefs.testimonial.current?.slideNext();
+    swiperRefs.team.current?.slideNext();
+  };
 
   return (
     <div className='testimonial-section ptb-100'>
@@ -127,7 +140,20 @@ const Testimonial = () => {
         </div>
         <h2 className='text-center pb-5'>What Our Clients Say About Us</h2>
 
-        <TeamComponent parentClass={'pt-0 pb-100'} data={testimonialData} />
+        <TeamComponent
+          parentClass={'pt-0 pb-100'}
+          data={testimonialData}
+          swiperRef={swiperRefs.team}
+        />
+
+        <div className='d-flex align-items-center justify-content-between navigation mt-3'>
+          <div onClick={handleSlidePrev}>
+            <i className='ri-arrow-left-line' />
+          </div>
+          <div onClick={handleSlideNext}>
+            <i className='ri-arrow-right-line' />
+          </div>
+        </div>
 
         <div className='testimonial-area ptb-100'>
           <Swiper
@@ -135,7 +161,7 @@ const Testimonial = () => {
             slidesPerView={1}
             loop
             onBeforeInit={(swiper) => {
-              swiperRef.current = swiper;
+              swiperRefs.testimonial.current = swiper;
             }}
             className='image-courser'
             modules={[Navigation]}
@@ -151,7 +177,6 @@ const Testimonial = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-
           {testimonialData.map(({ id, img }) => {
             return (
               <div key={id} className='user'>

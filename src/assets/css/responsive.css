@@ -397,6 +397,9 @@
   }
 
   /* article area */
+  .article-area h2 {
+    font-size: 28px;
+  }
   .article-area .section-title {
     margin-bottom: 60px;
   }
@@ -631,6 +634,9 @@
   }
 
   /* article area */
+   .article-area h2 {
+    font-size: 28px;
+  }
   .article-area .item .pop-content h3 {
     font-size: 25px;
   }
