@@ -7,8 +7,8 @@ const ContactForm = () => {
         <div className='col-lg-6'>
           <div className='section-title'>
             <div className='width'>
-              <div class='banner-area no-background pt-0'>
-                <span class='banner-top-title'>Contact</span>
+              <div className='banner-area no-background pt-0'>
+                <span className='banner-top-title'>Contact</span>
               </div>
               <h2>Join Our Network</h2>
               <p>
