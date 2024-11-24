@@ -52,16 +52,15 @@ const TeamComponent = ({ parentClass, data }) => {
             loop
             className='image-courser'
           >
-            {data.map(({ id, img, name, position, socal_link }) => {
+            {data.map(({ id, img, name, position, social_link }) => {
               return (
                 <SwiperSlide key={id}>
-                  {' '}
                   <TeamCard
                     img={img}
                     name={name}
                     position={position}
-                    socal_link={socal_link}
-                  />{' '}
+                    social_link={social_link}
+                  />
                 </SwiperSlide>
               );
             })}

@@ -16,7 +16,7 @@ const teamData = [
     img: img_1,
     name: 'Christian Haol',
     position: 'Web Developer',
-    socal_link: [
+    social_link: [
       {
         id: 1,
         link: '#',
@@ -39,7 +39,7 @@ const teamData = [
     img: img_2,
     name: 'Christian Haol',
     position: 'Web Developer',
-    socal_link: [
+    social_link: [
       {
         id: 1,
         link: '#',
@@ -62,7 +62,7 @@ const teamData = [
     img: img_3,
     name: 'Christian Haol',
     position: 'Web Developer',
-    socal_link: [
+    social_link: [
       {
         id: 1,
         link: '#',
@@ -85,7 +85,7 @@ const teamData = [
     img: img_4,
     name: 'Christian Haol',
     position: 'Web Developer',
-    socal_link: [
+    social_link: [
       {
         id: 1,
         link: '#',
@@ -108,7 +108,7 @@ const teamData = [
     img: img_5,
     name: 'Christian Haol',
     position: 'Web Developer',
-    socal_link: [
+    social_link: [
       {
         id: 1,
         link: '#',
