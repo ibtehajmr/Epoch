@@ -1559,7 +1559,7 @@ services Area CSS
 =================================================*/
 .services-area .single-services-box {
   border-radius: 30px;
-  background: linear-gradient(90deg, #e101ff26 0%, #7f01ff26 100%)
+  background: linear-gradient(90deg, #e101ff26 0%, #7f01ff26 100%);
 }
 .services-area .row .col-lg-4:first-child .single-services-box,
 .services-area .row .col-md-6:first-child .single-services-box {
@@ -1570,7 +1570,6 @@ services Area CSS
 .services-area .row .col-md-6:last-child .single-services-box {
   background: none;
 }
-
 
 .services-area .single-services-box h3 {
   font-size: 42px;
@@ -2003,27 +2002,20 @@ Testimonial Area CSS
   animation: movebounce 3s linear infinite;
 }
 
-.testimonial-area .user:nth-child(2) {
-  top: 0;
-  left: 10%;
-  animation: movebounce 3s linear infinite;
-}
-
 .testimonial-area .user:nth-child(3) {
-  position: absolute;
   top: 0;
   right: 7%;
   animation: movebounce 4s linear infinite;
 }
 
 .testimonial-area .user:nth-child(4) {
-  bottom: 18%;
+  top:90%;
   right: 14%;
   animation: movebounce 5s linear infinite;
 }
 
 .testimonial-area .user:nth-child(5) {
-  bottom: 24%;
+  top: 100%;
   left: 18%;
   animation: movebounce 3s linear infinite;
 }
@@ -3292,7 +3284,7 @@ Contact Section CSS
 }
 
 /* Tech section */
-
+.testimonial-section h2,
 .tech-section h2 {
   font-weight: 700;
   font-size: 64px;
@@ -3310,12 +3302,11 @@ Contact Section CSS
   height: '329px';
   width: 100%;
   max-width: 300px;
-
 }
 
 .gradient-border {
-    border-radius: 30px;
-   position: relative;
+  border-radius: 30px;
+  position: relative;
   z-index: 0;
   overflow: hidden;
 }
@@ -3338,7 +3329,6 @@ Contact Section CSS
     0 100%;
   background-image: linear-gradient(#e101ff, #7f01ff);
   animation: bgRotate 4s linear infinite;
-
 }
 
 .gradient-border::after {

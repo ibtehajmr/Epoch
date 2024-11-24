@@ -120,50 +120,48 @@ const Testimonial = () => {
   const swiperRef = useRef();
 
   return (
-    <div className='testimonal-area ptb-100'>
+    <div className='testimonial-section ptb-100'>
       <div className='container'>
         <div class='banner-area no-background text-center'>
           <span class='banner-top-title'>Testimonals</span>
         </div>
         <h2 className='text-center pb-5'>What Our Clients Says About Us</h2>
         <TeamComponent parentClass={'pt-0 pb-100'} data={testimonialData} />
-        <div className='ptb-100'>
-          <div>
-            <Swiper
-              spaceBetween={30}
-              slidesPerView={1}
-              loop
-              onBeforeInit={(swiper) => {
-                swiperRef.current = swiper;
-              }}
-              className='image-courser'
-              modules={[Navigation]}
-            >
-              {testimonialData.map(
-                ({ id, img, position, rating, review, name }) => {
-                  return (
-                    <SwiperSlide key={id}>
-                      <TestimonialCard
-                        img={img}
-                        position={position}
-                        name={name}
-                        rating={rating}
-                        review={review}
-                      />
-                    </SwiperSlide>
-                  );
-                },
-              )}
-            </Swiper>
+        <div className='testimonial-area ptb-100'>
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            loop
+            onBeforeInit={(swiper) => {
+              swiperRef.current = swiper;
+            }}
+            className='image-courser'
+            modules={[Navigation]}
+          >
+            {testimonialData.map(
+              ({ id, img, position, rating, review, name }) => {
+                return (
+                  <SwiperSlide key={id}>
+                    <TestimonialCard
+                      img={img}
+                      position={position}
+                      name={name}
+                      rating={rating}
+                      review={review}
+                    />
+                  </SwiperSlide>
+                );
+              },
+            )}
+          </Swiper>
 
-            {testimonialData.map(({ id, img }) => {
-              return (
-                <div key={id} className='user'>
-                  <img src={img} alt='image' />
-                </div>
-              );
-            })}
-          </div>
+          {testimonialData.map(({ id, img }) => {
+            return (
+              <div key={id} className='user'>
+                <img src={img} alt='image' />
+              </div>
+            );
+          })}
         </div>
         <div className='star'></div>
         <div className='star'></div>

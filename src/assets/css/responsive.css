@@ -466,7 +466,7 @@
     font-size: 17px;
   }
   /* Tech section */
-
+  .testimonial-section h2,
   .tech-section h2 {
     font-size: 28px;
   }
@@ -604,10 +604,6 @@
     height: 70px;
     width: 70px;
   }
-  .testimonial-area .user:nth-child(5) {
-    bottom: 80px;
-    left: 9%;
-  }
   /* pricing area */
   .pricing-area .pricing {
     font-size: 65px;
@@ -677,7 +673,7 @@
     flex-direction: column;
   }
   /* Tech section */
-
+  .testimonial-section h2,
   .tech-section h2 {
     font-size: 28px;
   }
