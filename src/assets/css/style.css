@@ -1975,7 +1975,7 @@ Testimonial Area CSS
 .testimonial-area .testimonial-item ul {
   padding: 0;
   list-style: none;
-  background-color: rgba(255, 182, 73, 0.368627451);
+    background-image: linear-gradient(to right, #e101ff, #7f01ff);
   display: inline-block;
   padding: 3px 20px;
   border-radius: 4px;
@@ -1984,7 +1984,8 @@ Testimonial Area CSS
 .testimonial-area .testimonial-item ul li {
   display: inline-block;
   font-size: var(--font-size);
-  color: #ffb649;
+    color: var(--white_color);
+
 }
 
 .testimonial-area .testimonial-item p {
