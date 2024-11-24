@@ -1,6 +1,7 @@
 import React from 'react';
 import PageHeader from '../components/common/pageHeader';
 import { strings } from '../locales';
+import TechAndTools from '../components/techAndTools';
 
 const MLModelDevelopment = () => {
   const { subRoute } = strings.MLModelDevelopment;
@@ -142,54 +143,7 @@ const MLModelDevelopment = () => {
             </div>
           </div>
         </section>
-
-        {/* Technologies */}
-        <section className='pricing-area ptb-100'>
-          <div className='container'>
-            <div className='section-title-center'>
-              <h2>Technologies and Tools</h2>
-            </div>
-            <div className='row'>
-              <div className='col-lg-3'>
-                <div className='card'>
-                  <div className='card_title'>TensorFlow</div>
-                  <p>
-                    A powerful open-source platform for building machine
-                    learning models.
-                  </p>
-                </div>
-              </div>
-              <div className='col-lg-3'>
-                <div className='card'>
-                  <div className='card_title'>PyTorch</div>
-                  <p>
-                    An open-source machine learning library used for
-                    applications such as computer vision and natural language
-                    processing.
-                  </p>
-                </div>
-              </div>
-              <div className='col-lg-3'>
-                <div className='card'>
-                  <div className='card_title'>Scikit-learn</div>
-                  <p>
-                    A simple and efficient tool for data mining and data
-                    analysis, built on NumPy, SciPy, and Matplotlib.
-                  </p>
-                </div>
-              </div>
-              <div className='col-lg-3'>
-                <div className='card'>
-                  <div className='card_title'>Keras</div>
-                  <p>
-                    A high-level neural networks API, written in Python and
-                    capable of running on top of TensorFlow, CNTK, or Theano.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <TechAndTools />
 
         {/* Contact Us */}
         <section className='contact-area ptb-100'>
