@@ -36,14 +36,14 @@ const MLModelDevelopment = () => {
         </section>
 
         {/* Services Offered */}
-        <section className='fetuses-area ptb-100 section-bg'>
+        <section className='services-area ptb-100 section-bg'>
           <div className='container'>
             <div className='section-title-center'>
               <h2>Our Services</h2>
             </div>
             <div className='row'>
               <div className='col-lg-4'>
-                <div className='single-fetuses-box'>
+                <div className='single-services-box'>
                   <div className='icon'>
                     <i className='icon-consultation'></i>
                   </div>
@@ -56,7 +56,7 @@ const MLModelDevelopment = () => {
                 </div>
               </div>
               <div className='col-lg-4'>
-                <div className='single-fetuses-box'>
+                <div className='single-services-box'>
                   <div className='icon'>
                     <i className='icon-development'></i>
                   </div>
@@ -68,7 +68,7 @@ const MLModelDevelopment = () => {
                 </div>
               </div>
               <div className='col-lg-4'>
-                <div className='single-fetuses-box'>
+                <div className='single-services-box'>
                   <div className='icon'>
                     <i className='icon-deployment'></i>
                   </div>
@@ -83,7 +83,7 @@ const MLModelDevelopment = () => {
             </div>
             <div className='row'>
               <div className='col-lg-4'>
-                <div className='single-fetuses-box'>
+                <div className='single-services-box'>
                   <div className='icon'>
                     <i className='icon-consultation'></i>
                   </div>
@@ -95,7 +95,7 @@ const MLModelDevelopment = () => {
                 </div>
               </div>
               <div className='col-lg-4'>
-                <div className='single-fetuses-box'>
+                <div className='single-services-box'>
                   <div className='icon'>
                     <i className='icon-development'></i>
                   </div>
@@ -108,7 +108,7 @@ const MLModelDevelopment = () => {
                 </div>
               </div>
               <div className='col-lg-4'>
-                <div className='single-fetuses-box'>
+                <div className='single-services-box'>
                   <div className='icon'>
                     <i className='icon-deployment'></i>
                   </div>

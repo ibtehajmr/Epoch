@@ -118,31 +118,12 @@
   .banner-area .image {
     padding-top: 30px;
   }
-  /* fetuses area */
-  .fetuses-area .single-fetuses-box .icon i {
-    font-size: 50px;
-    margin-bottom: 15px;
-    background-image: linear-gradient(315deg, #7f00ff 35%, #e100ff 50%);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
+  /* services area */
+  .services-area .single-services-box h3 {
+    width: 100%;
   }
-  .fetuses-area .single-fetuses-box h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  .fetuses-area .single-fetuses-box p {
-    font-size: 16px;
-  }
-  .fetuses-area .single-fetuses-box a {
-    font-size: 16px;
-  }
-  .fetuses-area .single-fetuses-box {
-    padding: 0 20px;
-    margin-bottom: 40px;
+  .services-area .single-services-box p {
+    font-size: 17px;
   }
   /* team area  */
   .team-area .navigation {
@@ -568,24 +549,12 @@
   .banner-area .scroll-down {
     left: -87%;
   }
-  /* fetuses area */
-  .fetuses-area .single-fetuses-box .icon i {
-    font-size: 50px;
-    margin-bottom: 15px;
+  /* services area */
+  .services-area .single-services-box h3 {
+    width: 100%;
   }
-  .fetuses-area .single-fetuses-box h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  .fetuses-area .single-fetuses-box p {
-    font-size: 16px;
-  }
-  .fetuses-area .single-fetuses-box a {
-    font-size: 16px;
-  }
-  .fetuses-area .single-fetuses-box {
-    padding: 0 20px;
-    margin-bottom: 40px;
+  .services-area .single-services-box p {
+    font-size: 17px;
   }
   /* team area  */
   .team-area .owl-theme .owl-nav {

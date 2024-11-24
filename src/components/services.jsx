@@ -1,53 +1,69 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+const servicesData = [
+  {
+    title: 'Identify The Issue',
+    description:
+      'Business consulting powered by precise AI insights, bringing better decisions and bigger results.',
+    link: '/identify-the-issue',
+  },
+  {
+    title: 'Develop A Prototype',
+    description:
+      'Tailored AI models designed to meet your specific business needs, ensuring optimal performance and results.',
+    link: '/develop-a-prototype',
+  },
+  {
+    title: 'Develop The Application',
+    description:
+      'Tailored AI models designed to meet your specific business needs, ensuring optimal performance and results.',
+    link: '/develop-the-application',
+  },
+  {
+    title: 'Test Through Simulation',
+    description:
+      'Comprehensive ERP systems developed to streamline your operations and improve overall business management.',
+    link: '/test-through-simulation',
+  },
+  {
+    title: 'Launch (Go-Live)',
+    description:
+      'Continuous support and optimization services to ensure your AI solutions remain effective and up-to-date.',
+    link: '/launch-go-live',
+  },
+  {
+    title: 'Support And Optimize',
+    description:
+      'Advanced software solutions powered by AI, designed to enhance efficiency, drive innovation, and provide a competitive edge.',
+    link: '/support-and-optimize',
+  },
+];
 
 const Services = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   return (
-    <section className='fetuses-area ptb-100 section-bg'>
+    <div className='services-area ptb-100'>
       <div className='container'>
-        <div className='section-title-center'>
-          <h2>Our Services</h2>
-        </div>
         <div className='row'>
-          <div className='col-lg-4'>
-            <div className='single-fetuses-box'>
-              <div className='icon'>
-                <i className='icon-consultation'></i>
+          {servicesData.map((service, index) => (
+            <div className='col-lg-4 col-md-6 mb-4' key={index}>
+              <div
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                className={`single-services-box p-4 ${hoveredIndex === index ? 'gradient-border' : ''}`}
+              >
+                <h3 className='mb-3 mt-2'>{service.title}</h3>
+                <p>{service.description}</p>
+                <button to={service.link} className='btn btn-primary'>
+                  Learn More
+                </button>
               </div>
-              <h3>Consultation</h3>
-              <p>
-                We start with an in-depth consultation to understand your
-                business processes and ERP requirements.
-              </p>
             </div>
-          </div>
-          <div className='col-lg-4'>
-            <div className='single-fetuses-box'>
-              <div className='icon'>
-                <i className='icon-development'></i>
-              </div>
-              <h3>Custom Development</h3>
-              <p>
-                We develop and customize Odoo and ERPNext solutions to fit your
-                unique business needs, ensuring seamless integration with your
-                existing systems.
-              </p>
-            </div>
-          </div>
-          <div className='col-lg-4'>
-            <div className='single-fetuses-box'>
-              <div className='icon'>
-                <i className='icon-deployment'></i>
-              </div>
-              <h3>Deployment & Support</h3>
-              <p>
-                We provide end-to-end deployment Services and continuous support
-                to ensure the smooth functioning of your ERP systems.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
