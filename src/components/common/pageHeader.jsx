@@ -27,7 +27,6 @@ const PageHeader = ({ title, desc, subRoute = '' }) => {
           </Link>
         </div>
       ) : null}
-      {/* // Add button and image */}
     </div>
   );
 };

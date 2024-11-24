@@ -9,26 +9,30 @@ import { ScrollRestoration } from 'react-router-dom'
 const Blog = () => {
   return (
     <>
-      <PageHeader pageName={"Blog"} />
-      <div className="blog-area article-area pt-100 pb-70">
-        <div className="container">
-          <div className="row">
-            {
-              blogData.map(({ author, date, desc, id, link, thumb, title }) => {
-                return (
-                  <div className="col-lg-4">
-                    <BlogCard key={id} date={date} link={link} thumb={thumb} title={title} />
-                  </div>
-                )
-              })
-            }
+      <PageHeader title={'Blog'} />
+      <div className='blog-area article-area pt-100 pb-70'>
+        <div className='container'>
+          <div className='row'>
+            {blogData.map(({ author, date, desc, id, link, thumb, title }) => {
+              return (
+                <div className='col-lg-4'>
+                  <BlogCard
+                    key={id}
+                    date={date}
+                    link={link}
+                    thumb={thumb}
+                    title={title}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
       <InstagramGallery />
-      <ScrollRestoration/>
+      <ScrollRestoration />
     </>
-  )
+  );
 }
 
 export default Blog
