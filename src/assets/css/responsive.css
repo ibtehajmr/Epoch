@@ -131,12 +131,17 @@
     top: 100%;
     left: 0;
     right: 0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
   }
 
-  .team-area .fi-tr-angle-small-left,
-  .team-area .fi-tr-angle-small-right {
-    font-size: 40px;
+  .team-area .ri-arrow-right-line,
+  .team-area .ri-arrow-left-line {
+    font-size: 20px;
   }
+
   /* about area */
   .about-area .image {
     margin-bottom: 30px;

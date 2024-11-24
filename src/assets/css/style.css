@@ -1630,6 +1630,8 @@ Team Area CSS
   width: 100%;
   height: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .team-area .image-item::before {
@@ -1721,9 +1723,13 @@ Team Area CSS
   transition: var(--transition);
 }
 
-.team-area .fi-tr-angle-small-left,
-.team-area .fi-tr-angle-small-right {
-  font-size: 70px;
+.team-area .ri-arrow-right-line,
+.team-area .ri-arrow-left-line {
+  font-size: 26px;
+  padding: 10px;
+  background-color: #953bf521;
+  border-radius: 100px;
+  color: #fff;
 }
 
 /*================================================
@@ -2009,7 +2015,7 @@ Testimonial Area CSS
 }
 
 .testimonial-area .user:nth-child(4) {
-  top:90%;
+  top: 90%;
   right: 14%;
   animation: movebounce 5s linear infinite;
 }

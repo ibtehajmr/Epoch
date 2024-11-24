@@ -65,12 +65,12 @@ const TeamComponent = ({ parentClass, data }) => {
               );
             })}
           </Swiper>
-          <div className='d-flex align-items-center justify-content-center justify-content-lg-start  navigation '>
+          <div className='d-flex align-items-center justify-content-between navigation mt-3'>
             <div onClick={() => swiperRef.current?.slidePrev()}>
-              <i className='fi fi-tr-angle-small-left'></i>
+              <i className='ri-arrow-left-line' />
             </div>
             <div onClick={() => swiperRef.current?.slideNext()}>
-              <i className='fi fi-tr-angle-small-right'></i>
+              <i className='ri-arrow-right-line' />
             </div>
           </div>
         </motion.div>
