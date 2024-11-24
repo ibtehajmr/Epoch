@@ -2,6 +2,7 @@ import React from 'react';
 import PageHeader from '../components/common/pageHeader';
 import { strings } from '../locales';
 import WhyUs from '../components/whyUs';
+import Services from '../components/services';
 
 const ERPDevelopment = () => {
   const { subRoute } = strings.AISoftware;
@@ -44,53 +45,7 @@ const ERPDevelopment = () => {
         </section>
 
         {/* Services Offered */}
-        <section className='fetuses-area ptb-100 section-bg'>
-          <div className='container'>
-            <div className='section-title-center'>
-              <h2>Our Services</h2>
-            </div>
-            <div className='row'>
-              <div className='col-lg-4'>
-                <div className='single-fetuses-box'>
-                  <div className='icon'>
-                    <i className='icon-consultation'></i>
-                  </div>
-                  <h3>Consultation</h3>
-                  <p>
-                    We start with an in-depth consultation to understand your
-                    business processes and ERP requirements.
-                  </p>
-                </div>
-              </div>
-              <div className='col-lg-4'>
-                <div className='single-fetuses-box'>
-                  <div className='icon'>
-                    <i className='icon-development'></i>
-                  </div>
-                  <h3>Custom Development</h3>
-                  <p>
-                    We develop and customize Odoo and ERPNext solutions to fit
-                    your unique business needs, ensuring seamless integration
-                    with your existing systems.
-                  </p>
-                </div>
-              </div>
-              <div className='col-lg-4'>
-                <div className='single-fetuses-box'>
-                  <div className='icon'>
-                    <i className='icon-deployment'></i>
-                  </div>
-                  <h3>Deployment & Support</h3>
-                  <p>
-                    We provide end-to-end deployment services and continuous
-                    support to ensure the smooth functioning of your ERP
-                    systems.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Services />
 
         {/* Case Studies */}
         <section className='about-area ptb-100'>

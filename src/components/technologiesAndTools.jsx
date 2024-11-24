@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TechAndTools = () => {
+const TechnologiesAndTools = () => {
   const technologies = [
     {
       label: 'TensorFlow',
@@ -45,4 +45,4 @@ const TechAndTools = () => {
   );
 };
 
-export default TechAndTools;
+export default TechnologiesAndTools;

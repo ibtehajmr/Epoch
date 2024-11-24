@@ -1,7 +1,7 @@
 import React from 'react';
 import PageHeader from '../components/common/pageHeader';
 import { strings } from '../locales';
-import TechAndTools from '../components/techAndTools';
+import TechnologiesAndTools from '../components/technologiesAndTools';
 
 const MLModelDevelopment = () => {
   const { subRoute } = strings.MLModelDevelopment;
@@ -143,7 +143,7 @@ const MLModelDevelopment = () => {
             </div>
           </div>
         </section>
-        <TechAndTools />
+        <TechnologiesAndTools />
 
         {/* Contact Us */}
         <section className='contact-area ptb-100'>
