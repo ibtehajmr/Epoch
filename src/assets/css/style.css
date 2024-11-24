@@ -2016,13 +2016,13 @@ Testimonial Area CSS
 }
 
 .testimonial-area .user:nth-child(4) {
-  top: 90%;
+  top: 75%;
   right: 14%;
   animation: movebounce 5s linear infinite;
 }
 
 .testimonial-area .user:nth-child(5) {
-  top: 100%;
+  top: 85%;
   left: 18%;
   animation: movebounce 3s linear infinite;
 }

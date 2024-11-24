@@ -1,6 +1,6 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from "swiper/modules"
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
 import client_1 from '../assets/img/client-1.png';
@@ -122,11 +122,13 @@ const Testimonial = () => {
   return (
     <div className='testimonial-section ptb-100'>
       <div className='container'>
-        <div class='banner-area no-background text-center'>
-          <span class='banner-top-title'>Testimonals</span>
+        <div className='banner-area no-background text-center'>
+          <span className='banner-top-title'>Testimonials</span>
         </div>
-        <h2 className='text-center pb-5'>What Our Clients Says About Us</h2>
+        <h2 className='text-center pb-5'>What Our Clients Say About Us</h2>
+
         <TeamComponent parentClass={'pt-0 pb-100'} data={testimonialData} />
+
         <div className='testimonial-area ptb-100'>
           <Swiper
             spaceBetween={30}
@@ -138,20 +140,16 @@ const Testimonial = () => {
             className='image-courser'
             modules={[Navigation]}
           >
-            {testimonialData.map(
-              ({ id, img, position, rating, review, name }) => {
-                return (
-                  <SwiperSlide key={id}>
-                    <TestimonialCard
-                      position={position}
-                      name={name}
-                      rating={rating}
-                      review={review}
-                    />
-                  </SwiperSlide>
-                );
-              },
-            )}
+            {testimonialData.map(({ id, position, rating, review, name }) => (
+              <SwiperSlide key={id}>
+                <TestimonialCard
+                  position={position}
+                  name={name}
+                  rating={rating}
+                  review={review}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
 
           {testimonialData.map(({ id, img }) => {
@@ -172,4 +170,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial
+export default Testimonial;

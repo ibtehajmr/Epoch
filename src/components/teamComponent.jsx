@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
-import { motion } from "framer-motion";
+import React, { useRef } from 'react';
+import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
@@ -7,7 +7,6 @@ import TeamCard from './common/teamCard';
 
 const TeamComponent = ({ parentClass, data }) => {
   const swiperRef = useRef();
-
   return (
     <div className={`team-area pt-100 ${parentClass}`}>
       <div className='container'>
@@ -79,4 +78,4 @@ const TeamComponent = ({ parentClass, data }) => {
   );
 };
 
-export default TeamComponent
+export default TeamComponent;
