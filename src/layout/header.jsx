@@ -29,6 +29,11 @@ const menuList = [
         path: '/erp-development',
         name: 'ERP Development',
       },
+      {
+        id: '4',
+        path: '/erp-development',
+        name: 'Ongoing Support & Optimization',
+      },
     ],
   },
   {
@@ -111,20 +116,23 @@ const Header = () => {
                   <Link
                     to={path}
                     className={`d-flex align-items-center justify-content-center ${dropDownList ? 'gap-2 dropdown-toggle' : ''} nav-link`}
+                    onMouseEnter={() => setDropdownOpen(id)}
                   >
                     {name}
                   </Link>
-                  {dropDownList && (
+                  {dropdownOpen && dropDownList && (
                     <ul className='dropdown-menu'>
                       {dropDownList.map(({ id, path, name }) => (
                         <li key={id}>
-                          <Link
+                          <NavLink
                             to={path}
-                            className='nav-link'
-                            style={{ fontSize: '14px' }}
+                            className={({ isActive }) =>
+                              `nav-link ${isActive ? 'active' : ''}`
+                            }
+                            onClick={() => setDropdownOpen('')}
                           >
                             {name}
-                          </Link>
+                          </NavLink>
                         </li>
                       ))}
                     </ul>

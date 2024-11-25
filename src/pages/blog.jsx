@@ -1,6 +1,5 @@
 import React from 'react'
-import PageHeader from '../components/common/pageHeader'
-import BlogsComponent from '../components/blogsComponent'
+import PageHeader from '../components/common/pageHeader';
 import { blogData } from '../utlits/blogData'
 import BlogCard from '../components/common/blogCard'
 import InstagramGallery from '../components/instagramGallery'

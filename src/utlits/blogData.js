@@ -1,7 +1,6 @@
-import img_1 from "../assets/img/blogs/artical-1.jpg"
-import img_2 from "../assets/img/blogs/artical-2.jpg"
-import img_3 from "../assets/img/blogs/artical-3.jpg"
-import img_4 from "../assets/img/blogs/artical-4.jpg"
+import img_1 from '../assets/img/blogs/article-1.png';
+import img_2 from '../assets/img/blogs/article-2.png';
+import img_3 from '../assets/img/blogs/article-3.png';
 
 export const blogData = [
   {
@@ -36,7 +35,7 @@ export const blogData = [
   },
   {
     id: '4',
-    thumb: img_4,
+    thumb: img_1,
     title: 'The actual history of machine intelligence',
     desc: '',
     date: 'March 18, 2022',
@@ -46,7 +45,7 @@ export const blogData = [
   },
   {
     id: '5',
-    thumb: img_1,
+    thumb: img_2,
     title: 'The actual history of machine intelligence',
     desc: '',
     date: 'March 18, 2022',
@@ -56,7 +55,7 @@ export const blogData = [
   },
   {
     id: '6',
-    thumb: img_2,
+    thumb: img_3,
     title: 'The actual history of machine intelligence',
     desc: '',
     date: 'March 18, 2022',

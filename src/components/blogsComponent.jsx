@@ -1,19 +1,18 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import BlogCard from './common/blogCard'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from "swiper/modules"
-import { blogData } from '../utlits/blogData'
-
+import React from 'react';
+import BlogCard from './common/blogCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import { blogData } from '../utlits/blogData';
+import { Link } from 'react-router-dom';
 
 const BlogsComponent = () => {
   const pagination = {
-    el: ".containerForBullets",
-    type: "bullets",
-    bulletClass: "swiper-custom-bullet",
-    bulletActiveClass: "swiper-custom-bullet-active",
+    el: '.containerForBullets',
+    type: 'bullets',
+    bulletClass: 'swiper-custom-bullet',
+    bulletActiveClass: 'swiper-custom-bullet-active',
     clickable: true,
-  }
+  };
   return (
     <div className='article-area ptb-100'>
       <div className='container'>
@@ -25,9 +24,9 @@ const BlogsComponent = () => {
                   <span className='banner-top-title'>Our Latest News</span>
                 </div>
                 <h2>Latest News & Articles</h2>
-                <button className='btn btn-primary' to='/blog'>
-                  See More
-                </button>
+                <Link className='btn btn-primary' to='/blog'>
+                  <span class='btn-text'>See More</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -81,6 +80,6 @@ const BlogsComponent = () => {
       </div>
     </div>
   );
-}
+};
 
-export default BlogsComponent
+export default BlogsComponent;

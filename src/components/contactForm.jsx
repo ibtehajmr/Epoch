@@ -97,8 +97,8 @@ const ContactForm = () => {
                 </div>
 
                 <div className='col-lg-12 col-md-12'>
-                  <button type='submit' className='btn btn-primary pt-3 pb-3'>
-                    Submit
+                  <button type='submit' className='btn btn-primary'>
+                    <span class='btn-text'>Submit</span>
                   </button>
                 </div>
               </div>
@@ -106,7 +106,7 @@ const ContactForm = () => {
           </div>
         </div>
         <div className='col-lg-6 image-container'>
-          <div className='image'>
+          <div className='image' style={{ height: '85%' }}>
             <img src={contact_img} alt='image' />
           </div>
         </div>
