@@ -1540,6 +1540,9 @@ Banner Area CSS
 .section-banner .cta {
   display: flex;
 }
+.section-banner .cta .btn {
+  border-radius: 5px;
+}
 
 /*================================================
 services Area CSS
@@ -3166,7 +3169,7 @@ Contact Section CSS
 .btn {
   font-weight: 500;
   border-radius: 100px;
-  width: 160px;
+  min-width: 160px;
   border: none;
 }
 
@@ -3214,6 +3217,9 @@ Contact Section CSS
 }
 
 .btn-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #6c757d;
   background-image: none;
 }

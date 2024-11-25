@@ -135,10 +135,12 @@ const Testimonial = () => {
   return (
     <div className='testimonial-section ptb-100'>
       <div className='container'>
-        <div className='banner-area no-background text-center'>
+        <div className='banner-area no-background text-center pt-0'>
           <span className='banner-top-title'>Testimonials</span>
         </div>
-        <h2 className='text-center pb-5'>What Our Clients Say About Us</h2>
+        <h2 className='text-center pb-5 w-50 mx-auto'>
+          What Our Clients Say About Us
+        </h2>
 
         <TeamComponent
           parentClass={'pt-0 pb-100'}

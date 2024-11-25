@@ -43,7 +43,7 @@ const About = ({
         >
           <div className='col-lg-6'>
             <div className='image'>
-              <img src={image || AboutCard} alt='Page Heading' />
+              <img src={image || AboutCard} alt='Section Heading' />
             </div>
           </div>
           <div className='col-lg-6'>
@@ -51,7 +51,7 @@ const About = ({
               className={`content ${showButton ? '' : 'vh-100 d-flex flex-column justify-content-around'}`}
             >
               <div>
-                <div className='banner-area no-background'>
+                <div className='banner-area no-background pt-0'>
                   <span className='banner-top-title'>
                     {subHeading || staticText.subHeading}
                   </span>
@@ -62,7 +62,7 @@ const About = ({
               <p style={contentStyle}>{description || staticText.desc}</p>
               {showButton ? (
                 <Link className='btn btn-primary pt-3 pb-3' to='/about'>
-                  Learn More
+                  <span class='btn-text'>Learn More</span>
                 </Link>
               ) : null}
             </div>

@@ -19,10 +19,10 @@ const PageHeader = ({ title, desc, subRoute = '' }) => {
 
       {pathname !== '/contact' ? (
         <div className='cta'>
-          <Link to='/about-us' className='default-btn me-2'>
-            Find Out More
+          <Link to='/about' className='btn btn-primary me-2'>
+            <span class='btn-text'>Find Out More</span>
           </Link>
-          <Link to='/book-appointment' className='default-btn btn-secondary'>
+          <Link to='/book-appointment' className='btn btn-secondary'>
             Get Started
           </Link>
         </div>
