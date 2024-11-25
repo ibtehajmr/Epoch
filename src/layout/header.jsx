@@ -16,7 +16,7 @@ const menuList = [
     dropDownList: [
       {
         id: '1',
-        path: '/ml-model-development',
+        path: '/custom-model-development',
         name: 'Custom Model Development',
       },
       {
@@ -31,7 +31,7 @@ const menuList = [
       },
       {
         id: '4',
-        path: '/erp-development',
+        path: '/support-and-optimization',
         name: 'Ongoing Support & Optimization',
       },
     ],

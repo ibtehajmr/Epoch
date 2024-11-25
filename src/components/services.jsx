@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const servicesData = [
   {
@@ -55,9 +56,9 @@ const Services = () => {
               >
                 <h3 className='mb-3 mt-2'>{service.title}</h3>
                 <p>{service.description}</p>
-                <button to={service.link} className='btn btn-primary'>
-                  Learn More
-                </button>
+                <NavLink to={service.link} className='btn btn-primary'>
+                  <span class='btn-text'>Learn More</span>
+                </NavLink>
               </div>
             </div>
           ))}

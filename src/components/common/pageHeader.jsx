@@ -18,8 +18,8 @@ const PageHeader = ({ title, desc, subRoute = '' }) => {
       <p className='w-75'>{desc || strings.pageHeaderDesc}</p>
 
       {pathname !== '/contact' ? (
-        <div className='cta'>
-          <Link to='/about' className='btn btn-primary me-2'>
+        <div className='cta gap-3'>
+          <Link to='/about' className='btn btn-primary'>
             <span class='btn-text'>Find Out More</span>
           </Link>
           <Link to='/book-appointment' className='btn btn-secondary'>

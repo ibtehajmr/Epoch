@@ -12,11 +12,7 @@ const About = ({
   direction = 'rtl',
   showButton = false,
 }) => {
-  const staticText = strings.aboutUs.imageCard;
-
-  const contentStyle = {
-    textAlign: direction === 'rtl' ? 'right' : 'left',
-  };
+  const staticText = strings.offer;
 
   const flexDirectionStyle = {
     flexDirection: direction === 'rtl' ? 'row-reverse' : 'row',
@@ -53,15 +49,15 @@ const About = ({
               <div>
                 <div className='banner-area no-background pt-0'>
                   <span className='banner-top-title'>
-                    {subHeading || staticText.subHeading}
+                    {subHeading || staticText.title}
                   </span>
                 </div>
 
-                <h2 style={contentStyle}>{heading || staticText.heading}</h2>
+                <h2>{heading || staticText.heading}</h2>
               </div>
-              <p style={contentStyle}>{description || staticText.desc}</p>
+              <p>{description || staticText.desc}</p>
               {showButton ? (
-                <Link className='btn btn-primary pt-3 pb-3' to='/about'>
+                <Link className='btn btn-primary' to='/about'>
                   <span class='btn-text'>Learn More</span>
                 </Link>
               ) : null}

@@ -3190,7 +3190,7 @@ Contact Section CSS
 
 .btn-primary .btn-text {
   display: inline-block;
-  transition: transform 0.3s ease;
+  transition: transform 1.5s ease;
 }
 
 .btn-primary:hover .btn-text {
@@ -3212,8 +3212,8 @@ Contact Section CSS
   transform: translate(0, -50%);
   opacity: 1;
   transition:
-    left 0.8s ease,
-    opacity 0.8s ease;
+    left 1.5s ease,
+    opacity 1.5s ease;
 }
 
 .btn-secondary {
