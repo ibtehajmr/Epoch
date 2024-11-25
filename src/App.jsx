@@ -6,6 +6,7 @@ import Brands from './components/brands';
 import Testimonial from './components/testimonial';
 import BlogsComponent from './components/blogsComponent';
 import { ScrollRestoration } from 'react-router-dom';
+import { strings } from './locales';
 
 const Home = () => {
   const { imageCard } = strings.aboutUs;
